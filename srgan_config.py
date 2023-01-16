@@ -38,7 +38,7 @@ num_rcb = 16
 # Test upscale factor
 upscale_factor = 4
 # Current configuration parameter method
-mode = "train"
+mode = "test"
 # Experiment name, easy to save weights and log files
 exp_name = "SRGAN_x4-DIV2K"
 
@@ -90,8 +90,12 @@ if mode == "train":
 
 if mode == "test":
     # Test data address
-    lr_dir = f"./data/Set5/LRbicx{upscale_factor}"
+    #lr_dir = f"./data/Set5/LRbicx{upscale_factor}"
+    #lr_dir = r"C:\Users\KIM\Desktop\sr_datasets\DALLE2\4x_LR"
+    lr_dir = f"./data/sr_datasets/DALLE2/4x_LR"
     sr_dir = f"./results/test/{exp_name}"
-    gt_dir = f"./data/Set5/GTmod12"
+    #gt_dir = r"C:\Users\KIM\Desktop\sr_datasets\DALLE2\GT"
+    #gt_dir = f"./data/Set5/GTmod12"
+    gt_dir = f"./data/sr_datasets/DALLE2/GT
 
     g_model_weights_path = f"./results/pretrained_models/SRGAN_x4-ImageNet-8c4a7569.pth.tar"
