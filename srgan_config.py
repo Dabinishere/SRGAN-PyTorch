@@ -96,6 +96,6 @@ if mode == "test":
     sr_dir = f"./results/test/{exp_name}"
     #gt_dir = r"C:\Users\KIM\Desktop\sr_datasets\DALLE2\GT"
     #gt_dir = f"./data/Set5/GTmod12"
-    gt_dir = f"./data/sr_datasets/DALLE2/GT
+    gt_dir = f"./data/sr_datasets/DALLE2/GT"
 
     g_model_weights_path = f"./results/pretrained_models/SRGAN_x4-ImageNet-8c4a7569.pth.tar"
